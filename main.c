@@ -15,8 +15,6 @@ int main(void) {
   int **vet = malloc (4 * sizeof(int*)); //Vetor de 4 vetores
   int tam[4] = { 10000, 100000, 500000, 1000000 }; //Tamanho dos vetores
   int k = 0;
-  
-  struct timeval ini, fim;
   int iclock = 0;
   
   //Nome do arquivo gerado com valores aleatórios
@@ -33,7 +31,12 @@ int main(void) {
   printf("Programa iniciado\n");
   fprintf(arquivoSaida, "Relatório de Execução");
 
-  for (int i = 0; i < 4; i++){
+  for (int i = 0; i < 4; i++){    
+    fprintf(arquivoSaida, "\n\n---------------------------------------\n");
+    fprintf(arquivoSaida, "Tamanho do vetor de teste: %d\n", tam[i]);
+    fprintf(arquivoSaida, "---------------------------------------\n\n");
+    
+    
     //Gera um arquivo arquivoEntrada.txt com valores aleatorios
   	geraAleatorios(arquivoEntrada, tam[i]);
   
@@ -44,42 +47,30 @@ int main(void) {
     ordenaVetor(vet[k], tam[i], arquivoSaida, iclock);
     
     iclock++;
-    k++;
-  }
+    
+    fprintf(arquivoSaida, "\n\n---------------------------------------\n");
+    fprintf(arquivoSaida, "---- MELHOR CASO ----\n\n");
 
-  k = 0;
-  
-  fprintf(arquivoSaida, "\n\n---------------------------------------\n");
-  fprintf(arquivoSaida, "---- MELHOR CASO ----\n\n");
-
-  for (int i = 0; i < 4; i++){
-    //Salva o vetor ordenado crecente (melhor caso)
-    for (int j = 0; j < tam[i]; j++){
+      //Salva o vetor ordenado crecente (melhor caso)
+    for (int j = 0; j < tam[i]; j++)
       vet[k][i] = j;
-    }
 
     //Chama todas as ordenações e salva no arquivo
     ordenaVetor(vet[k], tam[i], arquivoSaida, iclock);
     
     iclock++;
-    k++;
-  }
-
-  k = 0;
-  
-  fprintf(arquivoSaida, "\n\n---------------------------------------\n");
-  fprintf(arquivoSaida, "---- PIOR CASO ----\n\n");
-  
-  for (int i = 0; i < 4; i++){
+    
+    fprintf(arquivoSaida, "\n\n---------------------------------------\n");
+    fprintf(arquivoSaida, "---- PIOR CASO ----\n\n");
+    
     //Salva o vetor ordenado descrecente (pior caso)
     for (int j = tam[i]-1; j >= 0; j--){
       vet[k][i] = j;
     }
-
+  
     //Chama todas as ordenações e salva no arquivo
     ordenaVetor(vet[k], tam[i], arquivoSaida, iclock);
     
-    iclock++;
     k++;
   }
   

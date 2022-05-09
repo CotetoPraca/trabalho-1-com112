@@ -18,9 +18,6 @@ void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
   //Executa a parte principal do código
   struct timeval ini, fim; //Variáveis para o calculo de tempo de execução
   
-  fprintf(arquivoSaida, "\n\n---------------------------------------\n");
-  fprintf(arquivoSaida, "Tamanho do vetor de teste: %d\n\n", tam);
-  
   fprintf(arquivoSaida, "\n-- Selection Sort --\n");
   gettimeofday(&ini, NULL); //Inicia o timer
   selecao(vet, tam);
@@ -29,7 +26,7 @@ void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
   clockSelec[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
   clockSelec[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
   
-  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockSelec[iclock] * 1000.0);    
+  fprintf(arquivoSaida, "Tempo de execução: %lf ms\n", clockSelec[iclock]);    
   
   fprintf(arquivoSaida, "\n-- Quick Sort --\n");
   gettimeofday(&ini, NULL); //Inicia o timer
@@ -39,7 +36,7 @@ void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
   clockQuick[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
   clockQuick[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
   
-  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockQuick[iclock] * 1000.0);
+  fprintf(arquivoSaida, "Tempo de execução: %lf ms\n", clockQuick[iclock]);
   
   fprintf(arquivoSaida, "\n-- Merge Sort --\n");
   gettimeofday(&ini, NULL); //Inicia o timer
@@ -49,7 +46,7 @@ void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
   clockMerge[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
   clockMerge[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
   
-  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockMerge[iclock] * 1000.0);
+  fprintf(arquivoSaida, "Tempo de execução: %lf ms\n", clockMerge[iclock]);
   
   fprintf(arquivoSaida, "\n-- Smooth Sort --\n");
   gettimeofday(&ini, NULL); //Inicia o timer
@@ -59,7 +56,7 @@ void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
   clockSmooth[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
   clockSmooth[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
   
-  fprintf(arquivoSaida, "Tempo de execução: %lf  s\n", clockSmooth[iclock] * 1000.0);
+  fprintf(arquivoSaida, "Tempo de execução: %lf  ms\n", clockSmooth[iclock]);
 }
 
 // Funções gerais
