@@ -9,6 +9,59 @@ Jennifer Camila Gonçalves         - 2018008399
 
 #include "sorting.h"
 
+double clockSelec[32];  //Salva os tempos de execução do Select Sort
+double clockQuick[32];  //------------------------------ Quick Sort
+double clockMerge[32];  //------------------------------ Merge Sort
+double clockSmooth[32]; //------------------------------ Smooth Sort
+
+void ordenaVetor(int *vet, int tam, FILE *arquivoSaida, int iclock){
+  //Executa a parte principal do código
+  struct timeval ini, fim; //Variáveis para o calculo de tempo de execução
+  
+  fprintf(arquivoSaida, "\n\n---------------------------------------\n");
+  fprintf(arquivoSaida, "Tamanho do vetor de teste: %d\n\n", tam);
+  
+  fprintf(arquivoSaida, "\n-- Selection Sort --\n");
+  gettimeofday(&ini, NULL); //Inicia o timer
+  selecao(vet, tam);
+  gettimeofday(&fim, NULL); //Finaliza o timer
+  
+  clockSelec[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
+  clockSelec[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
+  
+  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockSelec[iclock] * 1000.0);    
+  
+  fprintf(arquivoSaida, "\n-- Quick Sort --\n");
+  gettimeofday(&ini, NULL); //Inicia o timer
+  quickSort(vet, 0, tam-1);
+  gettimeofday(&fim, NULL); //Finaliza o timer
+  
+  clockQuick[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
+  clockQuick[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
+  
+  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockQuick[iclock] * 1000.0);
+  
+  fprintf(arquivoSaida, "\n-- Merge Sort --\n");
+  gettimeofday(&ini, NULL); //Inicia o timer
+  mergeSort(vet, 0, tam-1);
+  gettimeofday(&fim, NULL); //Finaliza o timer
+  
+  clockMerge[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
+  clockMerge[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
+  
+  fprintf(arquivoSaida, "Tempo de execução: %lf s\n", clockMerge[iclock] * 1000.0);
+  
+  fprintf(arquivoSaida, "\n-- Smooth Sort --\n");
+  gettimeofday(&ini, NULL); //Inicia o timer
+  smoothSort(vet, tam-1);
+  gettimeofday(&fim, NULL); //Finaliza o timer
+  
+  clockSmooth[iclock] = ( (fim.tv_sec - ini.tv_sec) * 1000.0 ); 
+  clockSmooth[iclock] += ( (fim.tv_usec - ini.tv_usec) / 1000.0 );
+  
+  fprintf(arquivoSaida, "Tempo de execução: %lf  s\n", clockSmooth[iclock] * 1000.0);
+}
+
 // Funções gerais
 int geraAleatorios(char *nomeArquivo, int qtd)
 {

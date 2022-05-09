@@ -11,9 +11,13 @@ Jennifer Camila Gonçalves         - 2018008399
 #include <stdlib.h>
 #include <time.h>
 #include <stdint.h>
+#include <sys/time.h> // Apenas sistemas Unix
 
 #ifndef SORTING_H
 #define SORTING_H
+
+void ordenaVetor(int *vetor, int tam, FILE *arquivoSaida, int iclock);
+//Executa a maior parte do código
 
 int geraAleatorios(char *nomeArquivo, int qtd);
 //Esta função gera 'qtd' números aleatórios e os escreve no arquivo 'nomeArquivo'

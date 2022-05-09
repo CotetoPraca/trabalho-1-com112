@@ -1,88 +1,71 @@
 Relatório de Execução
 
 ---------------------------------------
-Tamanho do vetor de teste: 5000
-
-
--- Selection Sort --
-Tempo de execução: 10.135000 ms
-
--- Quick Sort --
-Tempo de execução: 3.021000 ms
-
--- Merge Sort --
-Tempo de execução: 0.156000 ms
-
--- Smooth Sort --
-Tempo de execução: 0.060000 ms
-
-
----------------------------------------
 Tamanho do vetor de teste: 10000
 
 
 -- Selection Sort --
-Tempo de execução: 36.992000 ms
+Tempo de execução: 63861.000000 s
 
 -- Quick Sort --
-Tempo de execução: 59.664000 ms
+Tempo de execução: 6085.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.299000 ms
+Tempo de execução: 246.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.118000 ms
+Tempo de execução: 112.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 15000
+Tamanho do vetor de teste: 100000
 
 
 -- Selection Sort --
-Tempo de execução: 191.340000 ms
+Tempo de execução: 8008021.000000 s
 
 -- Quick Sort --
-Tempo de execução: 11.578000 ms
+Tempo de execução: 193805.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.568000 ms
+Tempo de execução: 10607.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.171000 ms
+Tempo de execução: 924.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 20000
+Tamanho do vetor de teste: 500000
 
 
 -- Selection Sort --
-Tempo de execução: 267.400000 ms
+Tempo de execução: 153772730.000000 s
 
 -- Quick Sort --
-Tempo de execução: 12.845000 ms
+Tempo de execução: 687265.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.452000 ms
+Tempo de execução: 21498.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.154000 ms
+Tempo de execução: 13631.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 25000
+Tamanho do vetor de teste: 1000000
 
 
 -- Selection Sort --
-Tempo de execução: 380.135000 ms
+Tempo de execução: 594640362.000000 s
 
 -- Quick Sort --
-Tempo de execução: 23.939000 ms
+Tempo de execução: 1645129.000000 s
 
 -- Merge Sort --
-Tempo de execução: 1.090000 ms
+Tempo de execução: 52623.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.273000 ms
+Tempo de execução: 8291.000000  s
 
 
 ---------------------------------------
@@ -91,88 +74,71 @@ Tempo de execução: 0.273000 ms
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 5000
-
-
--- Selection Sort --
-Tempo de execução: 16.613000 ms
-
--- Quick Sort --
-Tempo de execução: 20.762000 ms
-
--- Merge Sort --
-Tempo de execução: 0.104000 ms
-
--- Smooth Sort --
-Tempo de execução: 0.052000 ms
-
-
----------------------------------------
 Tamanho do vetor de teste: 10000
 
 
 -- Selection Sort --
-Tempo de execução: 78.734000 ms
+Tempo de execução: 74265.000000 s
 
 -- Quick Sort --
-Tempo de execução: 154.705000 ms
+Tempo de execução: 6669.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.461000 ms
+Tempo de execução: 309.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.112000 ms
+Tempo de execução: 100.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 15000
+Tamanho do vetor de teste: 100000
 
 
 -- Selection Sort --
-Tempo de execução: 137.312000 ms
+Tempo de execução: 4998941.000000 s
 
 -- Quick Sort --
-Tempo de execução: 287.218000 ms
+Tempo de execução: 163837.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.395000 ms
+Tempo de execução: 2647.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.112000 ms
+Tempo de execução: 727.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 20000
+Tamanho do vetor de teste: 500000
 
 
 -- Selection Sort --
-Tempo de execução: 222.115000 ms
+Tempo de execução: 139768230.000000 s
 
 -- Quick Sort --
-Tempo de execução: 474.535000 ms
+Tempo de execução: 776923.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.468000 ms
+Tempo de execução: 28225.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.151000 ms
+Tempo de execução: 25508.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 25000
+Tamanho do vetor de teste: 1000000
 
 
 -- Selection Sort --
-Tempo de execução: 387.625000 ms
+Tempo de execução: 576436412.000000 s
 
 -- Quick Sort --
-Tempo de execução: 851.278000 ms
+Tempo de execução: 1388634.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.961000 ms
+Tempo de execução: 78572.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.315000 ms
+Tempo de execução: 12793.000000  s
 
 
 ---------------------------------------
@@ -181,85 +147,68 @@ Tempo de execução: 0.315000 ms
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 5000
-
-
--- Selection Sort --
-Tempo de execução: 8.171000 ms
-
--- Quick Sort --
-Tempo de execução: 32.451000 ms
-
--- Merge Sort --
-Tempo de execução: 0.181000 ms
-
--- Smooth Sort --
-Tempo de execução: 0.062000 ms
-
-
----------------------------------------
 Tamanho do vetor de teste: 10000
 
 
 -- Selection Sort --
-Tempo de execução: 41.238000 ms
+Tempo de execução: 25794.000000 s
 
 -- Quick Sort --
-Tempo de execução: 162.556000 ms
+Tempo de execução: 52893.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.370000 ms
+Tempo de execução: 218.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.112000 ms
+Tempo de execução: 80.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 15000
+Tamanho do vetor de teste: 100000
 
 
 -- Selection Sort --
-Tempo de execução: 124.037000 ms
+Tempo de execução: 5823086.000000 s
 
 -- Quick Sort --
-Tempo de execução: 333.244000 ms
+Tempo de execução: 123714.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.485000 ms
+Tempo de execução: 6094.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.173000 ms
+Tempo de execução: 1176.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 20000
+Tamanho do vetor de teste: 500000
 
 
 -- Selection Sort --
-Tempo de execução: 343.387000 ms
+Tempo de execução: 143599181.000000 s
 
 -- Quick Sort --
-Tempo de execução: 558.213000 ms
+Tempo de execução: 745432.000000 s
 
 -- Merge Sort --
-Tempo de execução: 7.224000 ms
+Tempo de execução: 42991.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.193000 ms
+Tempo de execução: 10598.000000  s
 
 
 ---------------------------------------
-Tamanho do vetor de teste: 25000
+Tamanho do vetor de teste: 1000000
 
 
 -- Selection Sort --
-Tempo de execução: 370.613000 ms
+Tempo de execução: 573763352.000000 s
 
 -- Quick Sort --
-Tempo de execução: 931.547000 ms
+Tempo de execução: 1587796.000000 s
 
 -- Merge Sort --
-Tempo de execução: 0.978000 ms
+Tempo de execução: 43714.000000 s
 
 -- Smooth Sort --
-Tempo de execução: 0.293000 ms
+Tempo de execução: 53101.000000  s
