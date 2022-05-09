@@ -12,9 +12,11 @@ Grupo 5:
 
 ## Sobre os Arquivos
 
-Os arquivos ``arquivoEntrada.txt`` e ``arquivoSaída`` foram os arquivos usados para montar o relatório do trabalho
+Foram usados vetores de tamanho 10.000, 100.000, 500.000, 1.000.000 no programa. Os dados de teste foram gerados aleatoriamente usando as funções ``srand()`` e ``rand()`` da biblioteca ``<stdlib.h>`` e salvos em um arquivo de texto.
 
-Os valores do ``arquivoEntrada.txt`` e, consequentemente, o resultado gerado no arquivo ``arquivoSaida.txt`` variam a cada execução do programa, já que os dados são gerados aleatoriamente usando as funções ``srand()`` e ``rand()`` da biblioteca ``<stdlib.h>``.
+Os valores do ``arquivoEntrada.txt`` e, consequentemente, o resultado gerado no arquivo ``arquivoSaida.txt`` variam a cada execução do programa
+
+Os arquivos ``arquivoEntrada.txt`` e ``arquivoSaída`` foram os arquivos usados para montar o relatório do trabalho
 
 ---
 
